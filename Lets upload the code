@@ -1,0 +1,19 @@
+##we will clone a repo 
+#we will be a root user
+sudo -i
+##password is Welcome@123
+32  git clone https://github.com/gopal1409/spring-hello.git
+#once we clone the repo 
+   33  cd spring-hello/
+
+###rm -rf is the linux command which will remove my git refrence
+   34  rm -rf .git
+   35  git init
+   36  git config --global user.name "gopal"
+   37  git config --global user.email "gopal1409@gmail.com"
+   38  git add .
+   39  git commit -m "spring hello app"
+   40  git log
+##lets generate the public and private key
+   41  ssh-keygen -t rsa
+   42  cat  /root/.ssh/id_rsa.pub
