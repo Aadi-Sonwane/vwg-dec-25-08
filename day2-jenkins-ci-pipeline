@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+    stages {
+        stage('code from scm') {
+            steps {
+                echo "geeting code from scm"
+            }
+        }
+        stage('mvn build') {
+            steps {
+                echo "code buidling happening"
+            }
+        }
+        stage('mvn test') {
+            steps {
+                echo "testing my app"
+            }
+        }
+    }
+    
+}
