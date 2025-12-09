@@ -8,12 +8,13 @@ pipeline {
         }
         stage('mvn build') {
             steps {
-                echo "code buidling happening"
+                sh 'mvn -B -DskipTests clean package'
             }
         }
         stage('mvn test') {
             steps {
-                echo "testing my app"
+                sh 'mvn test'
+                junit 'target/surefire-reports/*.xml'
             }
         }
     }
