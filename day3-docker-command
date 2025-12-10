@@ -40,3 +40,7 @@
   124  docker ps
   125  docker stop 3c
   126  docker ps -a
+#docker networking ls
+ 132  ip a
+  133  docker network ls
+  134  docker network inspect bridge
